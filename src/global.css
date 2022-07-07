@@ -11,8 +11,6 @@
     --blue-300: #4EA8DE;
     --blue-600: #1E6F9F;
     --danger: #E25858;
-    --background-dark: #454545;
-    --background-light: #EFEFEF;
 }
 
 * {
@@ -22,7 +20,7 @@
 }
 
 body {
-    background: var(--background-dark);
+    background: var(--gray-600);
     color: var(--gray-100);
     -webkit-font-smoothing: antialiased;
 }
