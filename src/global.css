@@ -23,10 +23,25 @@ body {
     background: var(--gray-600);
     color: var(--gray-100);
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 
 body, input, textarea, button {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0.85rem;               /* width of the entire scrollbar */
+  }
+
+body::-webkit-scrollbar-track {
+    background: var(--gray-500);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gray-700);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--gray-500);  /* creates padding around scroll thumb */
 }
