@@ -6,13 +6,20 @@ import { TaskList } from './components/TaskList'
 import './global.css'
 
 function App() {
+  const [tasks, setTasks] = useState([])
+
+  
+
+  function getNewTask(newTask) {
+    setTasks([...tasks, newTask])
+  }
 
   return (
     <div className="App">
       <Header />
       <main>
-        <CreateNewTask />
-        <TaskList />
+        <CreateNewTask onGetNewTask={getNewTask} />
+        <TaskList taskList={tasks}/>
       </main>
       <Footer />      
     </div>

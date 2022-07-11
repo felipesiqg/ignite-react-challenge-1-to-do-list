@@ -2,17 +2,17 @@ import plusSign from '../assets/plusSign.svg'
 import styles from './CreateNewTask.module.css'
 import { useState } from 'react'
 
-export function CreateNewTask() {
-    const [tasks, setTasks] = useState(['Estudar React', 'Finalizar Projeto ToDo', 'Mercado', 'Janta'])
-
+export function CreateNewTask({onGetNewTask}) {
     const [newTaskText, setNewTaskText] = useState('')
+    const [newTask, setNewTask] = useState('')
 
     function handleCreateNewTask(){
-           event.preventDefault()
-
-           setTasks([... tasks, newTaskText])
-           setNewTaskText('')  
-   }
+        event.preventDefault()
+        console.log(newTaskText)
+        setNewTask(newTaskText)
+        setNewTaskText('')  
+        onGetNewTask(newTask)
+        }
 
    function handleNewTaskChange() {
     event.target.setCustomValidity('')
