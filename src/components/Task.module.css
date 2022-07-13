@@ -12,10 +12,13 @@
 
 .taskContainer > p {
     font-size: 0.875rem;
+    width: calc(100% - 104px)
 }
 
 .taskContainer button {
     background: transparent;
     border: none;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto
 }

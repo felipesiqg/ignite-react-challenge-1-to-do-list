@@ -3,20 +3,17 @@ import styles from './CreateNewTask.module.css'
 import { useState } from 'react'
 
 export function CreateNewTask({onGetNewTask}) {
-    const [newTaskText, setNewTaskText] = useState('')
     const [newTask, setNewTask] = useState('')
 
     function handleCreateNewTask(){
         event.preventDefault()
-        console.log(newTaskText)
-        setNewTask(newTaskText)
-        setNewTaskText('')  
         onGetNewTask(newTask)
+        setNewTask('')  
         }
 
    function handleNewTaskChange() {
     event.target.setCustomValidity('')
-    setNewTaskText(event.target.value)
+    setNewTask(event.target.value)
     }
 
     function handleNewTaskInvalid(){
@@ -27,7 +24,7 @@ export function CreateNewTask({onGetNewTask}) {
         <form onSubmit={handleCreateNewTask} className={styles.form} >
             <input 
                 type="text" 
-                value={newTaskText}
+                value={newTask}
                 placeholder="Adicione uma nova tarefa"
                 onChange={handleNewTaskChange}
                 onInvalid={handleNewTaskInvalid}
