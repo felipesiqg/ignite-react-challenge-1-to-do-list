@@ -1,6 +1,6 @@
 import styles from './TaskCounter.module.css'
 
-export function TaskCounter({onTaskList}) {
+export function TaskCounter({taskListLength}) {
     return(
         <div className={styles.counterContainer}>
             <p>
@@ -8,7 +8,7 @@ export function TaskCounter({onTaskList}) {
                     Tarefas criadas
                 </strong>
                 <span className={styles.counter}>
-                    {onTaskList.length}
+                    {taskListLength}
                 </span>
             </p>
             <p>

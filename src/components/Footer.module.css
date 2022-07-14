@@ -5,8 +5,10 @@ footer {
     justify-content: center;
     gap: 1.2rem;
     color: var(--gray-300);
-    position: absolute;
-    bottom: 0
+    position: fixed;
+    bottom: 0;
+    background: var(--gray-600);
+    opacity: 0.99
 }
 
 footer a {
