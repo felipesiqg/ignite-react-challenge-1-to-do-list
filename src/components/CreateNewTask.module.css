@@ -1,9 +1,11 @@
 .form {
-    margin-top: -1.6875rem;
+    margin: -1.6875rem auto 0 auto;
     display: flex;
     justify-content: center;
     gap: 8px;
-    
+
+    max-width: 90vw;
+
 }
 
 .form > input {
