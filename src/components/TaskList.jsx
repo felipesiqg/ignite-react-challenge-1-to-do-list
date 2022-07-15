@@ -13,14 +13,12 @@ export function TaskList({ taskList, onDeleteTask, onSwitchCheck }) {
     }
 
     function onHandleSwitchCheck (content) {
-        console.log(`onHandleSwitchCheck ${content}`)
-
         onSwitchCheck(content)
     }
 
     return (
         <div className={styles.container}>
-            <TaskCounter taskListLength={taskList.length}/>
+            <TaskCounter taskListCounter={taskList} />
 
             {taskList.length === 0 ?
                 <div className={styles.emptyContainer}>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useSyncExternalStore } from 'react'
 import { CreateNewTask } from './components/CreateNewTask'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
@@ -19,7 +19,6 @@ function App() {
   }
 
   function switchCheck(taskToCheck) {
-    console.log(`switchCheck ${taskToCheck}`)
     const tasksSwitched = tasks.map(task => {
       return(
         task.key === taskToCheck ?  

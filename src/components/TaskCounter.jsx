@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import styles from './TaskCounter.module.css'
 
-export function TaskCounter({taskListLength}) {
+export function TaskCounter({taskListCounter}) {
+    
+    const sumCompleteTask = taskListCounter.reduce(
+        (sum, task) => task.isTaskComplete === true ? sum + 1 : sum,
+        0
+        );
+        
     return(
         <div className={styles.counterContainer}>
             <p>
@@ -8,7 +15,7 @@ export function TaskCounter({taskListLength}) {
                     Tarefas criadas
                 </strong>
                 <span className={styles.counter}>
-                    {taskListLength}
+                    {taskListCounter.length}
                 </span>
             </p>
             <p>
@@ -16,7 +23,7 @@ export function TaskCounter({taskListLength}) {
                     Concluídas
                 </strong>
                 <span className={styles.counter}>
-                    2
+                    {sumCompleteTask}
                 </span>
             </p>
         </div>

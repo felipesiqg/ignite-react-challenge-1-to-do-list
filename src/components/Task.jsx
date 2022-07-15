@@ -9,7 +9,6 @@ export function Task({ content, isTaskComplete, onDeleteTask, onSwitchCheck })
     }
 
     function handleSwitchCheck() {
-        console.log(`handleSwitchCheck ${content}`)
         onSwitchCheck(content)
     }
 
