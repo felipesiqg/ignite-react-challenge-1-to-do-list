@@ -2,14 +2,14 @@ import { CheckCircle, Circle, Trash } from 'phosphor-react'
 
 import styles from './Task.module.css'
 
-export function Task({ content, isTaskComplete, onDeleteTask, onSwitchCheck }) 
+export function Task({id, content, isTaskComplete, onDeleteTask, onSwitchCheck }) 
 {
     function handleDeleteTask() {
-        onDeleteTask(content)
+        onDeleteTask(id)
     }
 
     function handleSwitchCheck() {
-        onSwitchCheck(content)
+        onSwitchCheck(id)
     }
 
     return(

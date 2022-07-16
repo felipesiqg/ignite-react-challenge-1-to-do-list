@@ -26,5 +26,10 @@
 }
 
 .emptyContainer strong, .emptyContainer p {
-    line-height: 1.4rem
+    line-height: 1.4rem;
+    display: inline-block;
+    text-align: center;
+}
+.emptyContainer strong {
+    margin-bottom: 0.7rem
 }

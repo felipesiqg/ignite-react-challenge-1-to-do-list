@@ -32,6 +32,11 @@ body, input, textarea, button {
     font-size: 1rem;
 }
 
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--blue-600)
+}
+
 body::-webkit-scrollbar {
     width: 0.85rem;               /* width of the entire scrollbar */
   }

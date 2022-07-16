@@ -8,12 +8,13 @@ import clipboard from '../assets/clipboard.svg'
 
 export function TaskList({ taskList, onDeleteTask, onSwitchCheck }) {    
 
-    function onHandleDeleteTask (content) {
-        onDeleteTask(content)
+    function onHandleDeleteTask (id) {
+        onDeleteTask(id)
     }
 
-    function onHandleSwitchCheck (content) {
-        onSwitchCheck(content)
+    function onHandleSwitchCheck (id) {
+        console.log(`TaskList.jsx ${id}`)
+        onSwitchCheck(id)
     }
 
     return (
@@ -23,7 +24,7 @@ export function TaskList({ taskList, onDeleteTask, onSwitchCheck }) {
             {taskList.length === 0 ?
                 <div className={styles.emptyContainer}>
                     <img src={clipboard} alt="Prancheta" />
-                    <div>
+                    <div className={styles.emptyText}>
                         <strong>Você ainda não tem tarefas cadastradas</strong>
                         <p>Crie tarefas e organize seus itens a fazer</p>
                     </div>
@@ -33,7 +34,8 @@ export function TaskList({ taskList, onDeleteTask, onSwitchCheck }) {
                     {taskList.map(task => {
                         return(
                             <Task 
-                                key={task.taskName}
+                                id={task.id}
+                                key={task.id}
                                 content={task.taskName}
                                 isTaskComplete={task.isTaskComplete}
                                 onDeleteTask={onHandleDeleteTask}
