@@ -18,7 +18,7 @@ export function Task({id, content, isTaskComplete, onDeleteTask, onSwitchCheck }
                 {isTaskComplete ? <CheckCircle weight='fill' size={17.45} color="var(--blue-300)" /> : <Circle size={17.45} color="var(--blue-300)" /> }
             </button>        
             
-            <p>{content}</p>
+            {isTaskComplete ? <p className={styles.completeTask}>{content}</p> : <p>{content}</p> }
             
             <button title='Deletar comentário' onClick={handleDeleteTask}>
                 <Trash size={14} color="var(--gray-300)" />
