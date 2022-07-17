@@ -2,87 +2,89 @@
 The project is a To Do List Website front-end using ReactJS. Todo is the first challenge of the React Trail 2022 from Rocketseat. 
 
 
-## :globe_with_meridians: Hospedagem da aplicação
+## :globe_with_meridians: Application Hosting
 
-[![Deployed with Vercel](https://vercel.com/button)](https://ignite-to-do-list-hzowpvjgk-felipesiqg.vercel.app)
+[![Deployed with Vercel](https://vercel.com/button)](https://ignite-to-do-list-felipesiqg.vercel.app/)
 
-## :book: Sobre o projeto
+## :book: About the project
 
-É uma lista de tarefas onde os usuários podem interagir criando novas tarefas, marcando-as como concluídas e excluindo-as. O design da aplicação é totalmente responsivo, se adaptando para a resolução do dispositivo utilizado.
+Todo is one of the challenges of the Ignite course by Rocketseat. Basically it's a "to do list" web application, in which the user is able to create and delete task, in addition to check as complete and incomplete. The aaplication is fully responsivelly, addapting to the device's screen size.
+
+In a first place, the project is just front-end, using ReactJS and the data is not save in a database, but in States. Therefore, if the browser is reloaded, all the data is lost. Soon I'll learn how to finish this project :nerd_face:	
 
 ### :computer: Layout web
   <div align="center">
-    <img alt="web 01" height="250" src="https://github.com/Math-rm1/ignite-todo/blob/master/src/assets/ignite-todo-web.png"/> 
+    <img alt="Layout web with empty list" height="250" src=".\src\assets\todoWebScreenEmpty.png"/> 
     <span>&nbsp</span>
-    <img alt="web 02" height="250" src="https://github.com/Math-rm1/ignite-todo/blob/master/src/assets/ignite-todo-web2.png"/> 
+    <img alt="Layout web with tasks on the list" height="250" src=".\src\assets\todoWebScreenWithTasks.png"/> 
   </div>
 
 ### :iphone: Layout mobile
   <div align="center">
-      <img alt="mobile 01" height="400" src="https://github.com/Math-rm1/ignite-todo/blob/master/src/assets/ignite-todo-mobile.png"/>
+      <img alt="Layout mobile with empty list" height="400" src="src\assets\todoMobileScreenEmpty.png"/>
       <span>&nbsp</span>
-      <img alt="mobile 02" height="400" src="https://github.com/Math-rm1/ignite-todo/blob/master/src/assets/ignite-todo-mobile2.png"/> 
+      <img alt="Layout web with tasks on the list" height="400" src="src\assets\todoMobileScreenWithTasks.png"/> 
   </div>
   
-  ### :checkered_flag: Peformance
+  <!--### :checkered_flag: Peformance
   <div align="center">
       <img alt="lighthouse" height="400" src="https://github.com/Math-rm1/ignite-todo/blob/master/src/assets/lighthouse-web.png"/>
-  </div>
+  </div>-->
   
 
 
-## :rocket: Tecnologias utilizadas
+## :rocket: Technologies
 ### Front end
 - HTML
 - CSS Modules
-- TypeScript
+- Javascript
 - ReactJS
-- Vite Plugin Svgr
 - UUID
 
-### Ferramentas
+### Tools
 - Hosting: Vercel
 - Build: Vite
-- Linter: ESLint
-- Format: Prettier
+- Version control: Git
 
-## :wrench: Como executar o projeto
+## :wrench: How to run the project
 
 ### Front end
-Pré-requisitos: npm / yarn
+Prerequisites: npm / yarn
 
 ```shell
-# clonar repositório
-git clone https://github.com/Math-rm1/ignite-todo
+# clone repository
+git clone git@github.com:felipesiqg/ignite-to-do-list.git
+// Use a password-protected SSH key.
 
-# entrar na pasta do projeto 
-cd <nome-do-projeto>
+# change directory
+cd <ignite-to-do-list>
+
 ```
 
 ```shell
-# instalar dependências com npm
-npm install ou npm i
+# install dependencies using npm
+npm install or npm i
 
-# executar o servidor de dev
+# run dev server
 npm run dev
 ```
 
 ```shell
-# instalar dependências com yarn
-yarn install ou yarn
+# install dependencies using yarn
+yarn install or yarn
 
-# executar o servidor de dev
+# run dev server
 yarn dev
 ```
 
-## :pencil: Licença
+## :pencil: License
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Math-rm1/ignite-todo/blob/master/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/felipesiqg/ignite-to-do-list/blob/main/LICENSE.md)
 
-Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+This project is protected by MIT license. Please check the License file for further details.
 
-## :bust_in_silhouette: Autor
+## :bust_in_silhouette: Author
 
-[![Matheus](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-r-mariano)
+[![Felipe Siqueira](https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipesiqg)
 
-Matheus Rodrigues Mariano
+Felipe Siqueira
